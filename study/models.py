@@ -5,7 +5,7 @@ class Subject(models.Model):
     description = models.TextField(blank=True)
     color = models.CharField(max_length=20, default="#3b82f6") # Default blue
 
-    def __clstr__(self):
+    def __str__(self):
         return self.name
 
 class Flashcard(models.Model):
